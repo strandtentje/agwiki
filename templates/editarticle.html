@@ -7,12 +7,12 @@
 	<label for="summary">
 		Samenvatting
 	</label>
-	<textarea name="summary" maxlength="250">{% summary %}</textarea>
+	<textarea name="summary" maxlength="250" rows="3" cols="40">{% summary %}</textarea>
 
 	<label for="content">
 		Inhoud
 	</label>
-	<textarea name="content">{% content %}</textarea>
+	<textarea name="content" class="ckeditor">{% content %}</textarea>
 
 	<input type="submit" name="submit" value="Opslaan">
 </form>
