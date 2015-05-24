@@ -1,6 +1,7 @@
 SELECT 
 	Article.id article,
     Body.id body,
+    url,
     version,
     iscurrent,
     title,
