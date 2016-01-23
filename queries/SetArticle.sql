@@ -1,2 +1,2 @@
-INSERT INTO Article(url, locale) VALUES(@url, 1);
+INSERT INTO Article(url) VALUES(@url);
 SELECT LAST_INSERT_ID() article;
