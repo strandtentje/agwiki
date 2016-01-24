@@ -1,3 +1,6 @@
 [submodule "login"]
 	path = login
 	url = https://github.com/strandtentje/aglogin/
+[submodule "tabindent"]
+	path = tabindent
+	url = https://github.com/julianlam/tabIndent.js.git
