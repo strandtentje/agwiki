@@ -7,7 +7,7 @@
 	<label for="summary">
 		Samenvatting
 	</label>
-	<textarea name="summary" maxlength="250" rows="3" cols="40">{% summary %}</textarea>
+	<textarea class="tabIndent" name="summary" maxlength="250" rows="3" cols="40">{% summary %}</textarea>
 
 	<label for="content">
 		Inhoud
@@ -16,3 +16,6 @@
 
 	<input type="submit" name="submit" value="Opslaan">
 </form>
+<script type="text/javascript">
+{% tabindentjs %}
+</script>
