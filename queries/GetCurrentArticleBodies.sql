@@ -1,2 +1,2 @@
-SELECT * FROM Body
+SELECT id FROM Body
 WHERE article = @article AND ISNULL(until)

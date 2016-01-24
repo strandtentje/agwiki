@@ -1,5 +1,6 @@
 SELECT 
-	id article, locale 
+	id AS article, 
+	locale 
 FROM
 	Article
 WHERE
