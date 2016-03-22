@@ -1,16 +1,16 @@
 <form method="post">
 	<label for="title">
-		Titel
+		Titel {% title_failure %}
 	</label>
 	<input type="text" name="title" value="{% title %}">
 
 	<label for="summary">
-		Samenvatting
+		Samenvatting {% summary_failure %}
 	</label>
 	<textarea name="summary" maxlength="250" rows="3" cols="40">{% summary %}</textarea>
 
 	<label for="content">
-		Inhoud
+		Inhoud {% content_failure %}
 	</label>
 	<textarea class="tabIndent" cols="80" rows="30" name="content">{% content %}</textarea>
 
