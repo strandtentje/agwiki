@@ -1,3 +1,4 @@
+<style type="text/css">{% codemirrorcss %} form input { width: 10cm; } .CodeMirror { font-size: 10pt; line-height: 100%; }</style>
 <form method="post">
 	<label for="title">
 		Titel {% title_failure %}
@@ -7,16 +8,18 @@
 	<label for="summary">
 		Samenvatting {% summary_failure %}
 	</label>
-	<textarea name="summary" maxlength="250" rows="3" cols="40">{% summary %}</textarea>
+	<textarea name="summary" maxlength="250" rows="3" cols="80">{% summary %}</textarea>
 
 	<label for="content">
 		Inhoud {% content_failure %}
 	</label>
-	<textarea class="tabIndent" cols="80" rows="30" name="content">{% content %}</textarea>
+	<textarea id="wikieditor" name="content">{% content %}</textarea>
 
 	<input type="submit" name="submit" value="Opslaan">
 </form>
-<script type="text/javascript">
-{% tabindentjs %}
-tabIndent.renderAll();
+<script type="text/javascript">{% codemirrorjs %}
+var editor = CodeMirror.fromTextArea(document.getElementById('wikieditor'), { lineNumbers: true, lineWrapping: true });
+editor.setSize('17cm', '10cm');
 </script>
+
+{% appendform %}
