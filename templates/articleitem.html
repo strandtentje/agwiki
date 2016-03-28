@@ -1,1 +1,5 @@
-<li><a href="{% baseurl %}/{% url %}">{% url %}</a> &middot; <a href="{% baseurl %}/admin?url={% url %}">edit</a> ({% title %})</li>
+<tr><td>{% title %}</td>
+<td><a href="{% baseurl %}/{% url %}">{% url %}</a></td>
+<td><a href="{% baseurl %}/admin?url={% url %}">edit</a></td>
+<td>{% authorusername %}</td>
+<td>{% since %}</td></tr>
