@@ -1,2 +1,2 @@
-INSERT INTO Body(article,title,summary,content,since)
-VALUES(@article,@title,@summary,@content, NOW())
+INSERT INTO Body(article,title,summary,content,since,authorusername)
+VALUES(@article,@title,@summary,@content,NOW(),@username)

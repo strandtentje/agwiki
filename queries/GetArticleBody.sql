@@ -4,7 +4,8 @@ SELECT
     url,
     title,
     summary,
-	content
+	content,
+	authorusername
 FROM
 	Article JOIN Body
     ON Body.article = Article.id
