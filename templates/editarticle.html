@@ -1,5 +1,10 @@
 <style type="text/css">{% codemirrorcss %} form input { width: 10cm; } .CodeMirror { font-size: 10pt; line-height: 100%; }</style>
 <form method="post">
+	<label for="url">
+		New url {% url_failure %}
+	</label>
+	<input type="text" name="url" id="articleurl" value="{% url %}">
+
 	<label for="title">
 		Titel {% title_failure %}
 	</label>
