@@ -1,5 +1,5 @@
 SELECT 
-	url, title, since
+	url, title, since, authorusername
 FROM 
 	Article
     JOIN Body ON Article.id = Body.article
