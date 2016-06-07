@@ -44,6 +44,7 @@ CREATE TABLE `Body` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `article` int(11) DEFAULT NULL,
   `title` text,
+  `mimetype` varchar(45) DEFAULT 'text/html',
   `summary` varchar(256) DEFAULT NULL,
   `content` longtext,
   `previous` int(11) DEFAULT NULL,

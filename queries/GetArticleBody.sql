@@ -5,7 +5,8 @@ SELECT
     title,
     summary,
 	content,
-	authorusername
+	authorusername,
+    mimetype
 FROM
 	Article JOIN Body
     ON Body.article = Article.id
