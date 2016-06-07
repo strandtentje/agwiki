@@ -22,8 +22,8 @@
 
 	<input type="submit" name="submit" value="Opslaan">
 </form>
-<script type="text/javascript">{% codemirrorjs %}
-var editor = CodeMirror.fromTextArea(document.getElementById('wikieditor'), { lineNumbers: true, lineWrapping: true });
+<script type="text/javascript">{% codemirrorjs %} {% codemirrorcssjs %} {% codemirrorjsjs %} {% codemirrorxml %} {% codemirorhtml %}
+var editor = CodeMirror.fromTextArea(document.getElementById('wikieditor'), { lineNumbers: true, lineWrapping: true, mode: "xml", htmlMode: true });
 editor.setSize('17cm', '10cm');
 </script>
 
